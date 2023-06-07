@@ -1,5 +1,5 @@
 FROM node:latest
-WORKDIR /usr/src/app
+WORKDIR /home/azureuser/jenkins
 COPY . /home/azureuser/
 RUN npm install
 RUN npm init
