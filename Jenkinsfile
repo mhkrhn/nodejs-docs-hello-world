@@ -2,28 +2,28 @@ pipeline {
   agent any
   stages {
     stage('Build Image') {
-       step {
+       steps {
         script {
           sh 'docker build -t jenk .'
           }
        }
   }
   stage('Tag Image') {
-       step {
+       steps {
         script {
           sh 'docker tag mhkrhn/jenk' 
           }
        }
   }
    stage('Login') {
-       step {
+       steps {
         script {
           sh 'docker login -u mhkrhn -p karahan2364'
           }
        }
   }
    stage('Push') {
-       step {
+       steps {
         script {
           sh 'docker push mhkrhn/jenkins'
           }
