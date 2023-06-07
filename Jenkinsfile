@@ -25,7 +25,7 @@ pipeline {
    stage('Push') {
        steps {
         script {
-          sh 'docker push mhkrhn/jenkins'
+          sh 'docker image push mhkrhn/jenkins:latest'
           }
        }
   }
