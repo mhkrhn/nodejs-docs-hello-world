@@ -11,7 +11,7 @@ pipeline {
   stage('Tag Image') {
        steps {
         script {
-          sh 'docker image tag jenk mhkrhn/jenk' 
+          sh 'docker image tag jenk:latest mhkrhn/jenk:latest' 
           }
        }
   }
