@@ -18,14 +18,14 @@ pipeline {
     stage('Tag Image') {
        steps {
         script {
-          sh 'docker image tag jenktest:latest mhkrhn/jenk:latest' 
+          sh 'docker image tag jenktest:latest mhkrhn/jenktest:latest' 
           }
        }
   }
     stage('Push') {
        steps {
         script {
-          sh 'docker image push mhkrhn/jenkins:latest'
+          sh 'docker image push mhkrhn/jenktest:latest'
           }
        }
   }
