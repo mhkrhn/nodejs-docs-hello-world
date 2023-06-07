@@ -1,5 +1,5 @@
 FROM node:latest
-WORKDIR /home/azureuser/jenkins
+WORKDIR /home/azure/jenkins
 COPY nodeapp/* /
 RUN npm install
 EXPOSE 3000
