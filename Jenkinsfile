@@ -4,14 +4,14 @@ pipeline{
     stage ('Build Image') {
        step {
         script {
-          sh 'docker build -t jenk .
+          sh 'docker build -t jenk .'
           }
        }
   }
   stage ('Tag Image') {
        step {
         script {
-          sh 'docker tag mhkrhn/jenk 
+          sh 'docker tag mhkrhn/jenk' 
           }
        }
   }
@@ -29,3 +29,4 @@ pipeline{
           }
        }
   }
+}
