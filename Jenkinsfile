@@ -36,7 +36,7 @@ node {
                  remote.name = 'mkvm1'
                  remote.host = '20.199.21.137'
                  remote.user = 'azureuser'
-                 remote.password = 'kara507144'
+                 remote.password = 'Karahan507144'
                  remote.allowAnyHosts = true
                  stage('Remote SSH') {
                  sshCommand remote: remote, command: "docker run -d -p 1137:1337 mhkrhn/jenktest"
